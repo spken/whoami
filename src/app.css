@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/mocha.css";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+
+body {
+	font-family: 'JetBrains Mono', monospace;
+}
+
+.accent {
+	color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] .accent {
+	color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] .accent {
+	color: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] .accent {
+	color: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] .accent {
+	color: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] .accent {
+	color: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] .accent {
+	color: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] .accent {
+	color: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] .accent {
+	color: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] .accent {
+	color: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] .accent {
+	color: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] .accent {
+	color: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] .accent {
+	color: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] .accent {
+	color: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] .accent {
+	color: var(--catppuccin-color-lavender);
+}
