@@ -4,65 +4,141 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap');
 
 body {
-	font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .accent {
-	color: var(--catppuccin-color-rosewater);
+  color: var(--catppuccin-color-rosewater);
 }
 
 [data-accent="rosewater"] .accent {
-	color: var(--catppuccin-color-rosewater);
+  color: var(--catppuccin-color-rosewater);
 }
 
 [data-accent="flamingo"] .accent {
-	color: var(--catppuccin-color-flamingo);
+  color: var(--catppuccin-color-flamingo);
 }
 
 [data-accent="pink"] .accent {
-	color: var(--catppuccin-color-pink);
+  color: var(--catppuccin-color-pink);
 }
 
 [data-accent="mauve"] .accent {
-	color: var(--catppuccin-color-mauve);
+  color: var(--catppuccin-color-mauve);
 }
 
 [data-accent="red"] .accent {
-	color: var(--catppuccin-color-red);
+  color: var(--catppuccin-color-red);
 }
 
 [data-accent="maroon"] .accent {
-	color: var(--catppuccin-color-maroon);
+  color: var(--catppuccin-color-maroon);
 }
 
 [data-accent="peach"] .accent {
-	color: var(--catppuccin-color-peach);
+  color: var(--catppuccin-color-peach);
 }
 
 [data-accent="yellow"] .accent {
-	color: var(--catppuccin-color-yellow);
+  color: var(--catppuccin-color-yellow);
 }
 
 [data-accent="green"] .accent {
-	color: var(--catppuccin-color-green);
+  color: var(--catppuccin-color-green);
 }
 
 [data-accent="teal"] .accent {
-	color: var(--catppuccin-color-teal);
+  color: var(--catppuccin-color-teal);
 }
 
 [data-accent="sky"] .accent {
-	color: var(--catppuccin-color-sky);
+  color: var(--catppuccin-color-sky);
 }
 
 [data-accent="sapphire"] .accent {
-	color: var(--catppuccin-color-sapphire);
+  color: var(--catppuccin-color-sapphire);
 }
 
 [data-accent="blue"] .accent {
-	color: var(--catppuccin-color-blue);
+  color: var(--catppuccin-color-blue);
 }
 
 [data-accent="lavender"] .accent {
-	color: var(--catppuccin-color-lavender);
+  color: var(--catppuccin-color-lavender);
+}
+
+/* Selection styles */
+::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-rosewater) 50%, transparent);
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-rosewater) 50%, transparent);
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-flamingo) 50%, transparent);
+  color: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-pink) 50%, transparent);
+  color: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-mauve) 50%, transparent);
+  color: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-red) 50%, transparent);
+  color: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-maroon) 50%, transparent);
+  color: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-peach) 50%, transparent);
+  color: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-yellow) 50%, transparent);
+  color: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-green) 50%, transparent);
+  color: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-teal) 50%, transparent);
+  color: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-sky) 50%, transparent);
+  color: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-sapphire) 50%, transparent);
+  color: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-blue) 50%, transparent);
+  color: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] ::selection {
+  background-color: color-mix(in srgb, var(--catppuccin-color-lavender) 50%, transparent);
+  color: var(--catppuccin-color-lavender);
 }
