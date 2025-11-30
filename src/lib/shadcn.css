@@ -1,0 +1,115 @@
+/* shadcn/ui theme variables mapped to Catppuccin */
+@theme {
+  /* Base shadcn color variables using Catppuccin */
+  --color-background: var(--catppuccin-color-base);
+  --color-foreground: var(--catppuccin-color-text);
+
+  --color-card: var(--catppuccin-color-surface0);
+  --color-card-foreground: var(--catppuccin-color-text);
+
+  --color-popover: var(--catppuccin-color-surface0);
+  --color-popover-foreground: var(--catppuccin-color-text);
+
+  --color-primary: var(--catppuccin-color-blue);
+  --color-primary-foreground: var(--catppuccin-color-base);
+
+  --color-secondary: var(--catppuccin-color-surface1);
+  --color-secondary-foreground: var(--catppuccin-color-text);
+
+  --color-muted: var(--catppuccin-color-surface0);
+  --color-muted-foreground: var(--catppuccin-color-subtext0);
+
+  --color-accent: var(--catppuccin-color-surface1);
+  --color-accent-foreground: var(--catppuccin-color-text);
+
+  --color-destructive: var(--catppuccin-color-red);
+  --color-destructive-foreground: var(--catppuccin-color-base);
+
+  --color-border: var(--catppuccin-color-surface1);
+  --color-input: var(--catppuccin-color-surface0);
+  --color-ring: var(--catppuccin-color-blue);
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  /* Make primary color and ring respond to your accent color system */
+  [data-accent="rosewater"] {
+    --color-primary: var(--catppuccin-color-rosewater);
+    --color-ring: var(--catppuccin-color-rosewater);
+  }
+
+  [data-accent="flamingo"] {
+    --color-primary: var(--catppuccin-color-flamingo);
+    --color-ring: var(--catppuccin-color-flamingo);
+  }
+
+  [data-accent="pink"] {
+    --color-primary: var(--catppuccin-color-pink);
+    --color-ring: var(--catppuccin-color-pink);
+  }
+
+  [data-accent="mauve"] {
+    --color-primary: var(--catppuccin-color-mauve);
+    --color-ring: var(--catppuccin-color-mauve);
+  }
+
+  [data-accent="red"] {
+    --color-primary: var(--catppuccin-color-red);
+    --color-ring: var(--catppuccin-color-red);
+  }
+
+  [data-accent="maroon"] {
+    --color-primary: var(--catppuccin-color-maroon);
+    --color-ring: var(--catppuccin-color-maroon);
+  }
+
+  [data-accent="peach"] {
+    --color-primary: var(--catppuccin-color-peach);
+    --color-ring: var(--catppuccin-color-peach);
+  }
+
+  [data-accent="yellow"] {
+    --color-primary: var(--catppuccin-color-yellow);
+    --color-ring: var(--catppuccin-color-yellow);
+  }
+
+  [data-accent="green"] {
+    --color-primary: var(--catppuccin-color-green);
+    --color-ring: var(--catppuccin-color-green);
+  }
+
+  [data-accent="teal"] {
+    --color-primary: var(--catppuccin-color-teal);
+    --color-ring: var(--catppuccin-color-teal);
+  }
+
+  [data-accent="sky"] {
+    --color-primary: var(--catppuccin-color-sky);
+    --color-ring: var(--catppuccin-color-sky);
+  }
+
+  [data-accent="sapphire"] {
+    --color-primary: var(--catppuccin-color-sapphire);
+    --color-ring: var(--catppuccin-color-sapphire);
+  }
+
+  [data-accent="blue"] {
+    --color-primary: var(--catppuccin-color-blue);
+    --color-ring: var(--catppuccin-color-blue);
+  }
+
+  [data-accent="lavender"] {
+    --color-primary: var(--catppuccin-color-lavender);
+    --color-ring: var(--catppuccin-color-lavender);
+  }
+}
