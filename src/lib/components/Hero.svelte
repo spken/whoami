@@ -77,8 +77,11 @@
               "Autogen",
               "AI/ML",
               "Cybersecurity",
+              "DevSecOps",
+              "Threat Modeling",
               "TypeScript",
               "React",
+              "PostgreSQL",
             ]}
           />
 
@@ -90,15 +93,7 @@
             timePeriod="October 2025 - November 2025"
             link="https://www.linkedin.com/feed/update/urn:li:activity:7394429736325885954/"
             past
-            skills={[
-              "React Native",
-              "TypeScript",
-              "Expo",
-              "Firebase",
-              "Python",
-              "FastAPI",
-              "AI/ML",
-            ]}
+            skills={["React Native", "TypeScript", "Expo", "Supabase", "AI/ML"]}
           />
 
           <TimelineItem
@@ -109,14 +104,7 @@
             timePeriod="September 2025"
             link="https://swiss-skills2025.ch/de/wettbewerb/31541/it-software-solutions-for-business"
             past
-            skills={[
-              "C#",
-              ".NET",
-              "WPF",
-              "SQL",
-              "Problem Solving",
-              "Time Management",
-            ]}
+            skills={["Electron", "MySQL", "Problem Solving", "Time Management"]}
           />
         </Timeline>
       </div>
@@ -139,6 +127,7 @@
               "Event Planning",
               "Communication",
               "Networking",
+              "Organization",
             ]}
           />
 
