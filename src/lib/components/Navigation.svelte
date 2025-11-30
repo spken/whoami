@@ -19,7 +19,11 @@
 <nav class="mb-8">
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-1.5 text-sm font-mono">
-      <span class="accent font-bold">~</span>
+      <a
+        href="/"
+        class="accent font-bold hover:opacity-80 transition-opacity hover:underline"
+        >~</a
+      >
       <span class="text-ctp-subtext0 font-bold">/</span>
       <span class="cursor"></span>
     </div>
