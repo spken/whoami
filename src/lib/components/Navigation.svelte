@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import ThemeSelector from "./ThemeSelector.svelte";
 
   let showThemeSelector = $state(false);
@@ -20,7 +21,7 @@
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-1.5 text-sm font-mono">
       <a
-        href="/"
+        href={resolve("/")}
         class="accent font-bold hover:opacity-80 transition-opacity hover:underline"
         >~</a
       >

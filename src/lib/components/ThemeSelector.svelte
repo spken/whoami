@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import {
     themeStore,
     type CatppuccinFlavor,
@@ -36,7 +37,7 @@
   <!-- Header -->
   <div class="flex items-center gap-1.5 text-sm font-mono mb-2">
     <a
-      href="/"
+      href={resolve("/")}
       class="accent font-bold hover:opacity-80 transition-opacity hover:underline"
       >~</a
     >
