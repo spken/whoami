@@ -62,7 +62,7 @@
   </div>
   <!-- Content -->
   <div
-    class="flex-1 pb-8 transition-all duration-300 group-hover:-translate-y-0.5"
+    class="flex-1 pb-2 transition-all duration-300 group-hover:-translate-y-0.5"
   >
     <div
       class="rounded-lg p-4 -m-4 transition-all duration-300 group-hover:bg-ctp-surface0/50 group-hover:shadow-lg"
