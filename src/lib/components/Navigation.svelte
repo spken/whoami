@@ -3,14 +3,14 @@
 
   let showThemeSelector = $state(false);
 
-  function handleBackdropClick(e: MouseEvent) {
+  function handleBackdropClick(e: Event) {
     if (e.target === e.currentTarget) {
       showThemeSelector = false;
     }
   }
 
-  function handleBackdropKeydown(e: KeyboardEvent) {
-    if (e.key === "Escape") {
+  function handleBackdropKeydown(e: Event) {
+    if (e instanceof KeyboardEvent && e.key === "Escape") {
       showThemeSelector = false;
     }
   }
@@ -19,7 +19,7 @@
 <nav class="mb-8">
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-1.5 text-sm font-mono">
-      <a href="/" class="accent hover:underline font-bold">~</a>
+      <span class="accent font-bold">~</span>
       <span class="text-ctp-subtext0 font-bold">/</span>
       <span class="cursor"></span>
     </div>

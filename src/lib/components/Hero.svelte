@@ -71,6 +71,15 @@
             description="Junior SWE @ UBS. Working on AI Execution and Enablement, with background in Cybersecurity Architecture and Innovation."
             timePeriod="August 2022 - Present"
             link="https://www.ubs.com"
+            skills={[
+              "Python",
+              "LangGraph",
+              "Autogen",
+              "AI/ML",
+              "Cybersecurity",
+              "TypeScript",
+              "React",
+            ]}
           />
 
           <TimelineItem
@@ -81,6 +90,15 @@
             timePeriod="October 2025 - November 2025"
             link="https://www.linkedin.com/feed/update/urn:li:activity:7394429736325885954/"
             past
+            skills={[
+              "React Native",
+              "TypeScript",
+              "Expo",
+              "Firebase",
+              "Python",
+              "FastAPI",
+              "AI/ML",
+            ]}
           />
 
           <TimelineItem
@@ -91,6 +109,14 @@
             timePeriod="September 2025"
             link="https://swiss-skills2025.ch/de/wettbewerb/31541/it-software-solutions-for-business"
             past
+            skills={[
+              "C#",
+              ".NET",
+              "WPF",
+              "SQL",
+              "Problem Solving",
+              "Time Management",
+            ]}
           />
         </Timeline>
       </div>
@@ -108,6 +134,12 @@
             fallback="CM"
             description="Committee member of UBS Community of Active Apprentices (CoaA), organizing events, fostering peer networking, and representing apprentice interests to strengthen connections across the company."
             timePeriod="August 2024 - Present"
+            skills={[
+              "Leadership",
+              "Event Planning",
+              "Communication",
+              "Networking",
+            ]}
           />
 
           <TimelineItem
@@ -116,6 +148,7 @@
             fallback="CR"
             description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship class."
             timePeriod="August 2022 - Present"
+            skills={["Leadership", "Communication", "Organization", "Advocacy"]}
           />
         </Timeline>
       </div>

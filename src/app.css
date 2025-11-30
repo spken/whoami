@@ -2,10 +2,10 @@
 @import "@catppuccin/tailwindcss/mocha.css";
 @import "./lib/shadcn.css";
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap");
 
 body {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .accent {
@@ -70,77 +70,137 @@ body {
 
 /* Selection styles */
 ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-rosewater) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-rosewater) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-rosewater);
 }
 
 [data-accent="rosewater"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-rosewater) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-rosewater) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-rosewater);
 }
 
 [data-accent="flamingo"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-flamingo) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-flamingo) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-flamingo);
 }
 
 [data-accent="pink"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-pink) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-pink) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-pink);
 }
 
 [data-accent="mauve"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-mauve) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-mauve) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-mauve);
 }
 
 [data-accent="red"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-red) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-red) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-red);
 }
 
 [data-accent="maroon"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-maroon) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-maroon) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-maroon);
 }
 
 [data-accent="peach"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-peach) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-peach) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-peach);
 }
 
 [data-accent="yellow"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-yellow) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-yellow) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-yellow);
 }
 
 [data-accent="green"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-green) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-green) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-green);
 }
 
 [data-accent="teal"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-teal) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-teal) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-teal);
 }
 
 [data-accent="sky"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-sky) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-sky) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-sky);
 }
 
 [data-accent="sapphire"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-sapphire) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-sapphire) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-sapphire);
 }
 
 [data-accent="blue"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-blue) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-blue) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-blue);
 }
 
 [data-accent="lavender"] ::selection {
-  background-color: color-mix(in srgb, var(--catppuccin-color-lavender) 50%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--catppuccin-color-lavender) 50%,
+    transparent
+  );
   color: var(--catppuccin-color-lavender);
 }
 

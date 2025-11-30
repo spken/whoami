@@ -35,7 +35,7 @@
 >
   <!-- Header -->
   <div class="flex items-center gap-1.5 text-sm font-mono mb-2">
-    <a href="/" class="accent hover:underline font-bold">~</a>
+    <span class="accent font-bold">~</span>
     <span class="text-ctp-subtext0 font-bold">/</span>
     <span class="text-ctp-text">theme</span>
     <span class="text-ctp-subtext0 font-bold">/</span>
@@ -47,7 +47,7 @@
     <div class="flex items-center gap-2">
       <span class="text-xs font-medium text-ctp-subtext0">Theme:</span>
       <div class="flex gap-1">
-        {#each themes as theme}
+        {#each themes as theme (theme.name)}
           <button
             onclick={() => themeStore.setFlavor(theme.name)}
             class="px-2 py-1 text-xs rounded transition-all {theme.name} bg-ctp-base text-ctp-text hover:cursor-pointer"
@@ -64,7 +64,7 @@
     <div class="flex flex-col gap-2">
       <span class="text-xs font-medium text-ctp-subtext0">Accent:</span>
       <div class="grid grid-cols-7 gap-1.5">
-        {#each accentColors as color}
+        {#each accentColors as color (color.name)}
           <button
             onclick={() => themeStore.setAccent(color.name)}
             class="w-7 h-7 rounded transition-all hover:scale-110 hover:cursor-pointer"
