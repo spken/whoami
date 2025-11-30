@@ -54,7 +54,7 @@
         <Avatar.Fallback>{fallback}</Avatar.Fallback>
       </Avatar.Root>
       <div class="space-y-1">
-        <h4 class="text-sm font-semibold">{name}</h4>
+        <h4 class="text-sm font-semibold accent">{name}</h4>
         <p class="text-sm">
           {description}
         </p>

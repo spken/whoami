@@ -10,7 +10,7 @@
   import swissSkillsLogo from "$lib/assets/swiss-skills-2025-logo.jpg";
 </script>
 
-<section class="mb-12">
+<section class="mt-12 mb-12">
   <h1 class="text-2xl sm:text-5xl font-bold mb-6 leading-tight tracking-tight">
     <span class="text-ctp-subtext0">whoami:</span>
     <span class="accent">Matias Varela</span>
