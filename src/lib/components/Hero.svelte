@@ -97,10 +97,10 @@
           />
 
           <TimelineItem
-            name="SwissSkills"
+            name="SwissSkills 2025"
             logo={swissSkillsLogo}
             fallback="SS"
-            description="5th place at the Swiss National Vocational Championships | SwissSkills 2025"
+            description="5th place at the Swiss National Vocational Championships."
             timePeriod="September 2025"
             link="https://swiss-skills2025.ch/de/wettbewerb/31541/it-software-solutions-for-business"
             past
