@@ -4,7 +4,8 @@
   import CalendarDaysIcon from "@lucide/svelte/icons/calendar-days";
   import BriefcaseIcon from "@lucide/svelte/icons/briefcase";
   import SparklesIcon from "@lucide/svelte/icons/sparkles";
-  import ExperienceItem from "./ExperienceItem.svelte";
+  import Timeline from "./Timeline.svelte";
+  import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
   import sayntLogo from "$lib/assets/saynt-logo.jpg";
   import swissSkillsLogo from "$lib/assets/swiss-skills-2025-logo.jpg";
@@ -60,13 +61,13 @@
     <div class="pt-6 space-y-8">
       <div>
         <h2
-          class="text-lg font-semibold mb-4 text-ctp-subtext0 flex items-center gap-2"
+          class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
         >
           <BriefcaseIcon class="size-5 accent" />
           Experience
         </h2>
-        <div class="flex items-center gap-6 flex-wrap">
-          <ExperienceItem
+        <Timeline>
+          <TimelineItem
             name="UBS"
             logo={ubsLogo}
             fallback="UBS"
@@ -75,9 +76,7 @@
             link="https://www.ubs.com"
           />
 
-          <span class="accent">•</span>
-
-          <ExperienceItem
+          <TimelineItem
             name="SAYNT"
             logo={sayntLogo}
             fallback="SA"
@@ -87,9 +86,7 @@
             past
           />
 
-          <span class="accent">•</span>
-
-          <ExperienceItem
+          <TimelineItem
             name="SwissSkills"
             logo={swissSkillsLogo}
             fallback="SS"
@@ -98,18 +95,18 @@
             link="https://swiss-skills2025.ch/de/wettbewerb/31541/it-software-solutions-for-business"
             past
           />
-        </div>
+        </Timeline>
       </div>
 
       <div class="pt-6">
         <h2
-          class="text-lg font-semibold mb-4 text-ctp-subtext0 flex items-center gap-2"
+          class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
         >
           <SparklesIcon class="size-5 accent" />
           Extracurriculars
         </h2>
-        <div class="flex items-center gap-6 flex-wrap">
-          <ExperienceItem
+        <Timeline>
+          <TimelineItem
             name="Committee Member - CoaA"
             logo={ubsLogo}
             fallback="CM"
@@ -117,16 +114,14 @@
             timePeriod="August 2024 - Present"
           />
 
-          <span class="accent">•</span>
-
-          <ExperienceItem
+          <TimelineItem
             name="Class Representative"
             logo={ubsLogo}
             fallback="CR"
             description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship class."
             timePeriod="August 2022 - Present"
           />
-        </div>
+        </Timeline>
       </div>
     </div>
   </div>
