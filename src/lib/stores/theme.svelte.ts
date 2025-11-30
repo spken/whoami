@@ -10,10 +10,10 @@ function createThemeStore() {
 	let state = $state<ThemeState>({
 		current: (typeof window !== 'undefined'
 			? localStorage.getItem('catppuccin-theme') as CatppuccinFlavor
-			: 'mocha') || 'mocha',
+			: 'frappe') || 'frappe',
 		accent: (typeof window !== 'undefined'
 			? localStorage.getItem('catppuccin-accent') as AccentColor
-			: 'blue') || 'blue'
+			: 'mauve') || 'mauve'
 	});
 
 	return {
