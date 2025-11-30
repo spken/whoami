@@ -1,8 +1,13 @@
 <script lang="ts">
-  import CalendarDaysIcon from "@lucide/svelte/icons/calendar-days";
-  import * as Avatar from "./ui/avatar";
   import * as HoverCard from "./ui/hover-card";
+  import * as Avatar from "./ui/avatar";
+  import CalendarDaysIcon from "@lucide/svelte/icons/calendar-days";
+  import BriefcaseIcon from "@lucide/svelte/icons/briefcase";
+  import SparklesIcon from "@lucide/svelte/icons/sparkles";
+  import ExperienceItem from "./ExperienceItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
+  import sayntLogo from "$lib/assets/saynt-logo.jpg";
+  import swissSkillsLogo from "$lib/assets/swiss-skills-2025-logo.jpg";
 </script>
 
 <section class="mb-12">
@@ -11,8 +16,8 @@
     <span class="accent">Matias Varela</span>
   </h1>
 
-  <div class="max-w-2xl space-y-4">
-    <p class="text-base text-ctp-text leading-relaxed font-medium">
+  <div class="max-w-2xl space-y-8">
+    <p class="text-lg text-ctp-text leading-relaxed font-medium">
       I'm currently working as a Junior SWE @
       <HoverCard.Root>
         <HoverCard.Trigger
@@ -51,5 +56,78 @@
       protects enterprises at scale is what strengthens my drive to keep
       building, and learning.
     </p>
+
+    <div class="pt-6 space-y-8">
+      <div>
+        <h2
+          class="text-lg font-semibold mb-4 text-ctp-subtext0 flex items-center gap-2"
+        >
+          <BriefcaseIcon class="size-5 accent" />
+          Experience
+        </h2>
+        <div class="flex items-center gap-6 flex-wrap">
+          <ExperienceItem
+            name="UBS"
+            logo={ubsLogo}
+            fallback="UBS"
+            description="Junior SWE @ UBS. Working on AI Execution and Enablement, with background in Cybersecurity Architecture and Innovation."
+            timePeriod="August 2022 - Present"
+            link="https://www.ubs.com"
+          />
+
+          <span class="accent">•</span>
+
+          <ExperienceItem
+            name="SAYNT"
+            logo={sayntLogo}
+            fallback="SA"
+            description="Built a full-stack mobile application that helps collectors discover and invest in luxury goods (watches & handbags) with data-, and AI-driven insights."
+            timePeriod="October 2025 - November 2025"
+            link="https://www.linkedin.com/feed/update/urn:li:activity:7394429736325885954/"
+            past
+          />
+
+          <span class="accent">•</span>
+
+          <ExperienceItem
+            name="SwissSkills"
+            logo={swissSkillsLogo}
+            fallback="SS"
+            description="5th place at the Swiss National Vocational Championships | SwissSkills 2025"
+            timePeriod="September 2025"
+            link="https://swiss-skills2025.ch/de/wettbewerb/31541/it-software-solutions-for-business"
+            past
+          />
+        </div>
+      </div>
+
+      <div class="pt-6">
+        <h2
+          class="text-lg font-semibold mb-4 text-ctp-subtext0 flex items-center gap-2"
+        >
+          <SparklesIcon class="size-5 accent" />
+          Extracurriculars
+        </h2>
+        <div class="flex items-center gap-6 flex-wrap">
+          <ExperienceItem
+            name="Committee Member - CoaA"
+            logo={ubsLogo}
+            fallback="CM"
+            description="Committee member of UBS Community of Active Apprentices (CoaA), organizing events, fostering peer networking, and representing apprentice interests to strengthen connections across the company."
+            timePeriod="August 2024 - Present"
+          />
+
+          <span class="accent">•</span>
+
+          <ExperienceItem
+            name="Class Representative"
+            logo={ubsLogo}
+            fallback="CR"
+            description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship class."
+            timePeriod="August 2022 - Present"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </section>
