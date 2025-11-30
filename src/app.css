@@ -144,6 +144,308 @@ body {
   color: var(--catppuccin-color-lavender);
 }
 
+/* Accent color utilities */
+.accent-color {
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] .accent-color {
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] .accent-color {
+  color: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] .accent-color {
+  color: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] .accent-color {
+  color: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] .accent-color {
+  color: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] .accent-color {
+  color: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] .accent-color {
+  color: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] .accent-color {
+  color: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] .accent-color {
+  color: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] .accent-color {
+  color: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] .accent-color {
+  color: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] .accent-color {
+  color: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] .accent-color {
+  color: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] .accent-color {
+  color: var(--catppuccin-color-lavender);
+}
+
+.accent-hover {
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] .accent-hover {
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] .accent-hover {
+  color: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] .accent-hover {
+  color: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] .accent-hover {
+  color: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] .accent-hover {
+  color: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] .accent-hover {
+  color: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] .accent-hover {
+  color: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] .accent-hover {
+  color: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] .accent-hover {
+  color: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] .accent-hover {
+  color: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] .accent-hover {
+  color: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] .accent-hover {
+  color: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] .accent-hover {
+  color: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] .accent-hover {
+  color: var(--catppuccin-color-lavender);
+}
+
+.bg-accent-color {
+  background-color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] .bg-accent-color {
+  background-color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] .bg-accent-color {
+  background-color: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] .bg-accent-color {
+  background-color: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] .bg-accent-color {
+  background-color: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] .bg-accent-color {
+  background-color: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] .bg-accent-color {
+  background-color: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] .bg-accent-color {
+  background-color: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] .bg-accent-color {
+  background-color: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] .bg-accent-color {
+  background-color: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] .bg-accent-color {
+  background-color: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] .bg-accent-color {
+  background-color: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] .bg-accent-color {
+  background-color: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] .bg-accent-color {
+  background-color: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] .bg-accent-color {
+  background-color: var(--catppuccin-color-lavender);
+}
+
+.border-accent-color {
+  border-color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] .border-accent-color {
+  border-color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] .border-accent-color {
+  border-color: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] .border-accent-color {
+  border-color: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] .border-accent-color {
+  border-color: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] .border-accent-color {
+  border-color: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] .border-accent-color {
+  border-color: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] .border-accent-color {
+  border-color: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] .border-accent-color {
+  border-color: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] .border-accent-color {
+  border-color: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] .border-accent-color {
+  border-color: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] .border-accent-color {
+  border-color: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] .border-accent-color {
+  border-color: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] .border-accent-color {
+  border-color: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] .border-accent-color {
+  border-color: var(--catppuccin-color-lavender);
+}
+
+/* Accent glow on hover */
+.group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] .group:hover .accent-glow {
+  box-shadow: 0 0 8px var(--catppuccin-color-lavender);
+}
+
 /* Cursor animation */
 .cursor {
   display: inline-block;

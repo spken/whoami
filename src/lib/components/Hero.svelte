@@ -2,8 +2,6 @@
   import * as HoverCard from "./ui/hover-card";
   import * as Avatar from "./ui/avatar";
   import CalendarDaysIcon from "@lucide/svelte/icons/calendar-days";
-  import BriefcaseIcon from "@lucide/svelte/icons/briefcase";
-  import SparklesIcon from "@lucide/svelte/icons/sparkles";
   import Timeline from "./Timeline.svelte";
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
@@ -63,7 +61,6 @@
         <h2
           class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
         >
-          <BriefcaseIcon class="size-5 accent" />
           Experience
         </h2>
         <Timeline>
@@ -102,7 +99,6 @@
         <h2
           class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
         >
-          <SparklesIcon class="size-5 accent" />
           Extracurriculars
         </h2>
         <Timeline>
