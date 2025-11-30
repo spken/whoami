@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "@catppuccin/tailwindcss/mocha.css";
+@import "@catppuccin/tailwindcss/frappe.css";
+@import "@catppuccin/tailwindcss/macchiato.css";
 @import "./lib/shadcn.css";
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap");

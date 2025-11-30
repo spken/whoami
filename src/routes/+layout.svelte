@@ -39,7 +39,7 @@
 </svelte:head>
 
 <div
-  class="min-h-screen bg-ctp-base text-ctp-text transition-colors duration-300 {themeStore.current}"
+  class="min-h-screen bg-ctp-base text-ctp-text transition-colors duration-300"
 >
   {@render children()}
 </div>
