@@ -24,7 +24,7 @@
 
   let faviconUrl = $derived.by(() => {
     const color = accentColors[themeStore.accent] || accentColors.mauve;
-    const iconSvg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='${color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/><path d='M12 17h.01'/></svg>`;
+    const iconSvg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><rect x='2' y='2' width='20' height='20' rx='2' fill='#1e1e1e'/><rect x='2' y='2' width='20' height='20' rx='2' stroke='#3d3d3d' stroke-width='0.5' fill='none'/><rect x='2' y='2' width='20' height='4' fill='#2d2d2d'/><circle cx='4.5' cy='4' r='0.8' fill='#ff5f56'/><circle cx='6.5' cy='4' r='0.8' fill='#ffbd2e'/><circle cx='8.5' cy='4' r='0.8' fill='#27c93f'/><path d='M 6 10 L 10 13 L 6 16' stroke='${color}' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/><rect x='11' y='12' width='2' height='3' fill='${color}'/></svg>`;
     return `data:image/svg+xml,${encodeURIComponent(iconSvg)}`;
   });
 
