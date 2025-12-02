@@ -34,7 +34,7 @@
               <Avatar.Fallback>UBS</Avatar.Fallback>
             </Avatar.Root>
             <div class="space-y-1">
-              <h4 class="text-sm font-semibold">UBS</h4>
+              <h4 class="accent text-sm font-semibold">UBS</h4>
               <p class="text-sm">
                 Junior SWE @ UBS. Working on AI Execution and Enablement, with
                 background in Cybersecurity Architecture and Innovation.
