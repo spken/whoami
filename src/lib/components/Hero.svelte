@@ -7,6 +7,7 @@
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
   import sayntLogo from "$lib/assets/saynt-logo.jpg";
   import swissSkillsLogo from "$lib/assets/swiss-skills-2025-logo.jpg";
+  import swissSkillsAmbassadorLogo from "$lib/assets/swiss-skills-logo.jpg";
 </script>
 
 <section class="mt-12 mb-12">
@@ -138,6 +139,22 @@
             description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship class."
             timePeriod="August 2022 - Present"
             skills={["Leadership", "Communication", "Organization", "Advocacy"]}
+          />
+
+          <TimelineItem
+            name="Ambassador"
+            logo={swissSkillsAmbassadorLogo}
+            fallback="SS"
+            description="As a SwissSkills Ambassador, I represent my profession and the SwissSkills movement, promoting the value of vocational education and training in Switzerland. I share my experiences to inspire young talents, contribute to public events and engagements, and support the visibility and recognition of skilled professions."
+            timePeriod="December 2025 - Present"
+            link="https://www.swiss-skills.ch"
+            skills={[
+              "Public Speaking",
+              "Advocacy",
+              "Mentorship",
+              "Event Participation",
+              "Professional Representation",
+            ]}
           />
         </Timeline>
       </div>
