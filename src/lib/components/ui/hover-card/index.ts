@@ -8,7 +8,4 @@ export {
   Root,
   Content,
   Trigger,
-  Root as HoverCard,
-  Content as HoverCardContent,
-  Trigger as HoverCardTrigger,
 };

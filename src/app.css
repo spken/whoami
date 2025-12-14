@@ -267,126 +267,6 @@ body {
   color: var(--catppuccin-color-lavender);
 }
 
-.accent-hover {
-  color: var(--catppuccin-color-rosewater);
-}
-
-[data-accent="rosewater"] .accent-hover {
-  color: var(--catppuccin-color-rosewater);
-}
-
-[data-accent="flamingo"] .accent-hover {
-  color: var(--catppuccin-color-flamingo);
-}
-
-[data-accent="pink"] .accent-hover {
-  color: var(--catppuccin-color-pink);
-}
-
-[data-accent="mauve"] .accent-hover {
-  color: var(--catppuccin-color-mauve);
-}
-
-[data-accent="red"] .accent-hover {
-  color: var(--catppuccin-color-red);
-}
-
-[data-accent="maroon"] .accent-hover {
-  color: var(--catppuccin-color-maroon);
-}
-
-[data-accent="peach"] .accent-hover {
-  color: var(--catppuccin-color-peach);
-}
-
-[data-accent="yellow"] .accent-hover {
-  color: var(--catppuccin-color-yellow);
-}
-
-[data-accent="green"] .accent-hover {
-  color: var(--catppuccin-color-green);
-}
-
-[data-accent="teal"] .accent-hover {
-  color: var(--catppuccin-color-teal);
-}
-
-[data-accent="sky"] .accent-hover {
-  color: var(--catppuccin-color-sky);
-}
-
-[data-accent="sapphire"] .accent-hover {
-  color: var(--catppuccin-color-sapphire);
-}
-
-[data-accent="blue"] .accent-hover {
-  color: var(--catppuccin-color-blue);
-}
-
-[data-accent="lavender"] .accent-hover {
-  color: var(--catppuccin-color-lavender);
-}
-
-.bg-accent-color {
-  background-color: var(--catppuccin-color-rosewater);
-}
-
-[data-accent="rosewater"] .bg-accent-color {
-  background-color: var(--catppuccin-color-rosewater);
-}
-
-[data-accent="flamingo"] .bg-accent-color {
-  background-color: var(--catppuccin-color-flamingo);
-}
-
-[data-accent="pink"] .bg-accent-color {
-  background-color: var(--catppuccin-color-pink);
-}
-
-[data-accent="mauve"] .bg-accent-color {
-  background-color: var(--catppuccin-color-mauve);
-}
-
-[data-accent="red"] .bg-accent-color {
-  background-color: var(--catppuccin-color-red);
-}
-
-[data-accent="maroon"] .bg-accent-color {
-  background-color: var(--catppuccin-color-maroon);
-}
-
-[data-accent="peach"] .bg-accent-color {
-  background-color: var(--catppuccin-color-peach);
-}
-
-[data-accent="yellow"] .bg-accent-color {
-  background-color: var(--catppuccin-color-yellow);
-}
-
-[data-accent="green"] .bg-accent-color {
-  background-color: var(--catppuccin-color-green);
-}
-
-[data-accent="teal"] .bg-accent-color {
-  background-color: var(--catppuccin-color-teal);
-}
-
-[data-accent="sky"] .bg-accent-color {
-  background-color: var(--catppuccin-color-sky);
-}
-
-[data-accent="sapphire"] .bg-accent-color {
-  background-color: var(--catppuccin-color-sapphire);
-}
-
-[data-accent="blue"] .bg-accent-color {
-  background-color: var(--catppuccin-color-blue);
-}
-
-[data-accent="lavender"] .bg-accent-color {
-  background-color: var(--catppuccin-color-lavender);
-}
-
 .border-accent-color {
   border-color: var(--catppuccin-color-rosewater);
 }
@@ -506,6 +386,67 @@ body {
 
 [data-accent="lavender"] .group:hover .accent-glow {
   box-shadow: 0 0 8px var(--catppuccin-color-lavender);
+}
+
+/* Group hover accent */
+.group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] .group:hover .group-hover\:accent {
+  color: var(--catppuccin-color-lavender);
 }
 
 /* Cursor animation */

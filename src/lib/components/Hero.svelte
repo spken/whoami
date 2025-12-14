@@ -2,6 +2,9 @@
   import * as HoverCard from "./ui/hover-card";
   import * as Avatar from "./ui/avatar";
   import CalendarDaysIcon from "@lucide/svelte/icons/calendar-days";
+  import GithubIcon from "@lucide/svelte/icons/github";
+  import LinkedinIcon from "@lucide/svelte/icons/linkedin";
+  import MailIcon from "@lucide/svelte/icons/mail";
   import Timeline from "./Timeline.svelte";
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
@@ -56,6 +59,54 @@
       protects enterprises at scale is what strengthens my drive to keep
       building, and learning.
     </p>
+
+    <div class="flex items-center gap-4 pt-4">
+      <a
+        href="https://github.com/spken"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex items-center gap-2 transition-colors"
+        title="GitHub"
+      >
+        <GithubIcon
+          class="size-5 text-ctp-subtext0 group-hover:accent transition-colors"
+        />
+        <span
+          class="text-sm font-mono text-ctp-subtext0 group-hover:accent transition-colors"
+          >github</span
+        >
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/matias-varela-cousillas"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex items-center gap-2 transition-colors"
+        title="LinkedIn"
+      >
+        <LinkedinIcon
+          class="size-5 text-ctp-subtext0 group-hover:accent transition-colors"
+        />
+        <span
+          class="text-sm font-mono text-ctp-subtext0 group-hover:accent transition-colors"
+          >linkedin</span
+        >
+      </a>
+
+      <a
+        href="mailto:varematias11@gmail.com"
+        class="group flex items-center gap-2 transition-colors"
+        title="Email"
+      >
+        <MailIcon
+          class="size-5 text-ctp-subtext0 group-hover:accent transition-colors"
+        />
+        <span
+          class="text-sm font-mono text-ctp-subtext0 group-hover:accent transition-colors"
+          >email</span
+        >
+      </a>
+    </div>
 
     <div class="pt-6 space-y-8">
       <div>

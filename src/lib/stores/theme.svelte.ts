@@ -43,7 +43,12 @@ function createThemeStore() {
       state.current = flavor;
       if (typeof window !== "undefined") {
         localStorage.setItem("catppuccin-theme", flavor);
-        document.documentElement.classList.remove("latte", "frappe", "macchiato", "mocha");
+        document.documentElement.classList.remove(
+          "latte",
+          "frappe",
+          "macchiato",
+          "mocha",
+        );
         document.documentElement.classList.add(flavor);
       }
     },
@@ -68,7 +73,12 @@ function createThemeStore() {
         if (savedAccent) {
           state.accent = savedAccent;
         }
-        document.documentElement.classList.remove("latte", "frappe", "macchiato", "mocha");
+        document.documentElement.classList.remove(
+          "latte",
+          "frappe",
+          "macchiato",
+          "mocha",
+        );
         document.documentElement.classList.add(state.current);
         document.documentElement.setAttribute("data-accent", state.accent);
       }
