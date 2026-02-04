@@ -184,10 +184,10 @@
           />
 
           <TimelineItem
-            name="Class Representative"
+            name="Cohort Representative"
             logo={ubsLogo}
             fallback="CR"
-            description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship class."
+            description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship cohort."
             timePeriod="August 2022 - Present"
             skills={["Leadership", "Communication", "Organization", "Advocacy"]}
           />
