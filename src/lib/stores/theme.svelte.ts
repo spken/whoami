@@ -29,7 +29,7 @@ function createThemeStore() {
     accent:
       (typeof window !== "undefined"
         ? (localStorage.getItem("catppuccin-accent") as AccentColor)
-        : "mauve") || "mauve",
+        : "red") || "red",
   });
 
   return {
