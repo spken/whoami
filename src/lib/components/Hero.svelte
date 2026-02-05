@@ -5,6 +5,7 @@
   import GithubIcon from "@lucide/svelte/icons/github";
   import LinkedinIcon from "@lucide/svelte/icons/linkedin";
   import MailIcon from "@lucide/svelte/icons/mail";
+  import DownloadIcon from "@lucide/svelte/icons/download";
   import Timeline from "./Timeline.svelte";
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
@@ -105,6 +106,21 @@
           class="text-sm font-mono text-ctp-subtext0 group-hover:accent transition-colors"
           >email</span
         >
+      </a>
+
+      <a
+          href="cv_matias-varela-cousillas_2026.pdf"
+          class="group flex items-center gap-2 transition-colors"
+          title="Download CV"
+          download
+        >
+          <DownloadIcon
+            class="size-5 text-ctp-subtext0 group-hover:accent transition-colors"
+          />
+          <span
+            class="text-sm font-mono text-ctp-subtext0 group-hover:accent transition-colors"
+            >cv</span
+          >
       </a>
     </div>
 
