@@ -10,6 +10,7 @@
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
   import sayntLogo from "$lib/assets/saynt-logo.jpg";
+  import bzzLogo from "$lib/assets/bzz-logo.jpg";
   import swissSkillsLogo from "$lib/assets/swiss-skills-2025-logo.jpg";
   import swissSkillsAmbassadorLogo from "$lib/assets/swiss-skills-logo.jpg";
 </script>
@@ -31,7 +32,7 @@
           class="accent underline"
         >
           UBS
-        </HoverCard.Trigger>
+        </HoverCard.Trigger>{''}.
         <HoverCard.Content class="w-80">
           <div class="flex justify-between space-x-4">
             <Avatar.Root>
@@ -53,12 +54,12 @@
             </div>
           </div>
         </HoverCard.Content>
-      </HoverCard.Root>. Specializing in AI execution and enablement, I've had
-      the opportunity to work on numerous projects including AI-driven
-      vulnerability management systems using Autogen and LangGraph, SOC incident
-      handling workflows, and more. Being able to contribute to software that
-      protects enterprises at scale is what strengthens my drive to keep
-      building, and learning.
+      </HoverCard.Root>I spend my days turning AI ideas into
+      production-shaped software: building AI-driven vulnerability management
+      systems with Autogen and LangGraph, SOC incident-handling workflows, and
+      other projects that help security teams sleep a little better. My
+      background in Cybersecurity Architecture and Innovation means I tend to
+      think like a builder, a tester, and a friendly menace to brittle systems.
     </p>
 
     <div class="flex items-center gap-4 pt-4">
@@ -136,7 +137,7 @@
             name="UBS"
             logo={ubsLogo}
             fallback="UBS"
-            description="Junior SWE @ UBS. Working on AI Execution and Enablement, with background in Cybersecurity Architecture and Innovation."
+            description="Junior SWE @ UBS. Turning AI ideas into production-shaped software across AI Execution and Enablement, with a background in Cybersecurity Architecture and Innovation."
             timePeriod="August 2022 - Present"
             link="https://www.ubs.com"
             skills={[
@@ -176,6 +177,39 @@
           />
         </Timeline>
       </div>
+
+      <div class="pt-6">
+  <h2
+    class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
+  >
+    Honors & Awards
+  </h2>
+
+  <Timeline>
+    <TimelineItem
+      name="Federal VET Diploma, Computer Science - Specialization in Software Engineering"
+      logo={bzzLogo}
+      fallback="BZZ"
+      description="Honored as the best IPA graduate in Switzerland and the best software engineering graduate in the Canton of Zurich."
+      timePeriod="August 2022 - July 2026"
+      skills={[
+        "IPA: 6.0",
+        "Overall: 5.8",
+      ]}
+    />
+
+    <TimelineItem
+      name="Federal Vocational Baccalaureate, Economics & Business"
+      logo={bzzLogo}
+      fallback="BZZ"
+      description="Recognized as the best graduate of the year for achieving the highest overall grade."
+      timePeriod="August 2022 - July 2026"
+      skills={[
+        "Overall: 5.6",
+      ]}
+    />
+  </Timeline>
+</div>
 
       <div class="pt-6">
         <h2
