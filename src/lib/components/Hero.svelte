@@ -190,7 +190,7 @@
       name="Federal VET Diploma, Software Engineering"
       logo={bzzLogo}
       fallback="BZZ"
-      description="Honored as the best IPA graduate in Switzerland and the best software engineering graduate in the Canton of Zurich."
+      description="Honored as the best IPA in Switzerland and the best software engineering graduate in the Canton of Zurich."
       timePeriod="August 2022 - July 2026"
       skills={[
         "IPA: 6.0",
