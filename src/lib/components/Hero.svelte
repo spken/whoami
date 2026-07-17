@@ -187,7 +187,7 @@
 
   <Timeline>
     <TimelineItem
-      name="Federal VET Diploma, Computer Science - Specialization in Software Engineering"
+      name="Federal VET Diploma, Software Engineering"
       logo={bzzLogo}
       fallback="BZZ"
       description="Honored as the best IPA graduate in Switzerland and the best software engineering graduate in the Canton of Zurich."
