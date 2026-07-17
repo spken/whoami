@@ -219,11 +219,28 @@
         </h2>
         <Timeline>
           <TimelineItem
+            name="Ambassador"
+            logo={swissSkillsAmbassadorLogo}
+            fallback="SS"
+            description="As a SwissSkills Ambassador, I represent my profession and the SwissSkills movement, promoting the value of vocational education and training in Switzerland. I share my experiences to inspire young talents, contribute to public events and engagements, and support the visibility and recognition of skilled professions."
+            timePeriod="December 2025 - Present"
+            link="https://www.swiss-skills.ch"
+            skills={[
+              "Public Speaking",
+              "Advocacy",
+              "Mentorship",
+              "Event Participation",
+              "Professional Representation",
+            ]}
+          />
+
+          <TimelineItem
             name="Committee Member - CoaA"
             logo={ubsLogo}
             fallback="CM"
             description="Committee member of UBS Community of Active Apprentices (CoaA), organizing events, fostering peer networking, and representing apprentice interests to strengthen connections across the company."
-            timePeriod="August 2024 - Present"
+            timePeriod="August 2024 - July 2026"
+            past
             skills={[
               "Leadership",
               "Event Planning",
@@ -238,24 +255,9 @@
             logo={ubsLogo}
             fallback="CR"
             description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship cohort."
-            timePeriod="August 2022 - Present"
+            timePeriod="August 2022 - July 2026"
+            past
             skills={["Leadership", "Communication", "Organization", "Advocacy"]}
-          />
-
-          <TimelineItem
-            name="Ambassador"
-            logo={swissSkillsAmbassadorLogo}
-            fallback="SS"
-            description="As a SwissSkills Ambassador, I represent my profession and the SwissSkills movement, promoting the value of vocational education and training in Switzerland. I share my experiences to inspire young talents, contribute to public events and engagements, and support the visibility and recognition of skilled professions."
-            timePeriod="December 2025 - Present"
-            link="https://www.swiss-skills.ch"
-            skills={[
-              "Public Speaking",
-              "Advocacy",
-              "Mentorship",
-              "Event Participation",
-              "Professional Representation",
-            ]}
           />
         </Timeline>
       </div>
