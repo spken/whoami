@@ -5,6 +5,7 @@
   import GithubIcon from "@lucide/svelte/icons/github";
   import LinkedinIcon from "@lucide/svelte/icons/linkedin";
   import MailIcon from "@lucide/svelte/icons/mail";
+  import DownloadIcon from "@lucide/svelte/icons/download";
   import Timeline from "./Timeline.svelte";
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
@@ -21,7 +22,7 @@
 
   <div class="max-w-2xl space-y-8">
     <p class="text-lg text-ctp-text leading-relaxed font-medium">
-      I'm currently working as a Junior SWE @
+      I'm currently working as an AI Engineer @
       <HoverCard.Root>
         <HoverCard.Trigger
           href="https://www.ubs.com"
@@ -40,13 +41,13 @@
             <div class="space-y-1">
               <h4 class="accent text-sm font-semibold">UBS</h4>
               <p class="text-sm">
-                Junior SWE @ UBS. Working on AI Execution and Enablement, with
+                AI Engineer @ UBS. Working in Joint AI Execution and Enablement, with
                 background in Cybersecurity Architecture and Innovation.
               </p>
               <div class="flex items-center pt-2">
                 <CalendarDaysIcon class="me-2 size-4 opacity-70" />
                 <span class="text-muted-foreground text-xs">
-                  August 2022 - Present
+                  August 2026 - Present
                 </span>
               </div>
             </div>
@@ -106,6 +107,21 @@
           >email</span
         >
       </a>
+
+      <a
+        href="/cv_matias-varela-cousillas_2026.pdf"
+        download
+        class="group flex items-center gap-2 transition-colors"
+        title="Download CV"
+      >
+        <DownloadIcon
+          class="size-5 text-ctp-subtext0 group-hover:accent transition-colors"
+        />
+        <span
+          class="text-sm font-mono text-ctp-subtext0 group-hover:accent transition-colors"
+          >cv</span
+        >
+      </a>
     </div>
 
     <div class="pt-6 space-y-8">
@@ -117,12 +133,34 @@
         </h2>
         <Timeline>
           <TimelineItem
-            name="UBS"
+            name="UBS - AI Engineer"
+            logo={ubsLogo}
+            fallback="UBS"
+            description="AI Engineer @ UBS. Working in Joint AI Execution and Enablement, with background in Cybersecurity Architecture and Innovation."
+            timePeriod="August 2026 - Present"
+            link="https://www.ubs.com"
+            skills={[
+              "Python",
+              "LangGraph",
+              "Autogen",
+              "AI/ML",
+              "Cybersecurity",
+              "DevSecOps",
+              "Threat Modeling",
+              "TypeScript",
+              "React",
+              "PostgreSQL",
+            ]}
+          />
+
+          <TimelineItem
+            name="UBS - Apprenticeship"
             logo={ubsLogo}
             fallback="UBS"
             description="Junior SWE @ UBS. Working on AI Execution and Enablement, with background in Cybersecurity Architecture and Innovation."
-            timePeriod="August 2022 - Present"
+            timePeriod="August 2022 - July 2026"
             link="https://www.ubs.com"
+            past
             skills={[
               "Python",
               "LangGraph",
