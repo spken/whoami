@@ -10,6 +10,7 @@
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
   import sayntLogo from "$lib/assets/saynt-logo.jpg";
+  import bzzLogo from "$lib/assets/bzz-logo.jpg";
   import swissSkillsLogo from "$lib/assets/swiss-skills-2025-logo.jpg";
   import swissSkillsAmbassadorLogo from "$lib/assets/swiss-skills-logo.jpg";
 </script>
@@ -31,7 +32,7 @@
           class="accent underline"
         >
           UBS
-        </HoverCard.Trigger>
+        </HoverCard.Trigger>{''}.
         <HoverCard.Content class="w-80">
           <div class="flex justify-between space-x-4">
             <Avatar.Root>
@@ -53,12 +54,12 @@
             </div>
           </div>
         </HoverCard.Content>
-      </HoverCard.Root>. Specializing in AI execution and enablement, I've had
-      the opportunity to work on numerous projects including AI-driven
-      vulnerability management systems using Autogen and LangGraph, SOC incident
-      handling workflows, and more. Being able to contribute to software that
-      protects enterprises at scale is what strengthens my drive to keep
-      building, and learning.
+      </HoverCard.Root>I spend my days turning AI ideas into
+      production-shaped software: building AI-driven vulnerability management
+      systems with Autogen and LangGraph, SOC incident-handling workflows, and
+      other projects that help security teams sleep a little better. My
+      background in Cybersecurity Architecture and Innovation means I tend to
+      think like a builder, a tester, and a friendly menace to brittle systems.
     </p>
 
     <div class="flex items-center gap-4 pt-4">
@@ -109,7 +110,7 @@
       </a>
 
       <a
-        href="/cv_matias-varela-cousillas_2026.pdf"
+        href="cv_matias-varela-cousillas_2026.pdf"
         download
         class="group flex items-center gap-2 transition-colors"
         title="Download CV"
@@ -157,7 +158,7 @@
             name="UBS - Apprenticeship"
             logo={ubsLogo}
             fallback="UBS"
-            description="Junior SWE @ UBS. Working on AI Execution and Enablement, with background in Cybersecurity Architecture and Innovation."
+            description="Junior SWE @ UBS. Turning AI ideas into production-shaped software across AI Execution and Enablement, with a background in Cybersecurity Architecture and Innovation."
             timePeriod="August 2022 - July 2026"
             link="https://www.ubs.com"
             past
@@ -200,36 +201,45 @@
       </div>
 
       <div class="pt-6">
+  <h2
+    class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
+  >
+    Honors & Awards
+  </h2>
+
+  <Timeline>
+    <TimelineItem
+      name="Federal VET Diploma, Software Engineering"
+      logo={bzzLogo}
+      fallback="BZZ"
+      description="Honored as the best IPA in Switzerland and the best software engineering graduate in the Canton of Zurich."
+      timePeriod="August 2022 - July 2026"
+      skills={[
+        "IPA: 6.0",
+        "Overall: 5.8",
+      ]}
+    />
+
+    <TimelineItem
+      name="Federal Vocational Baccalaureate, Economics & Business"
+      logo={bzzLogo}
+      fallback="BZZ"
+      description="Recognized as the best graduate of the year for achieving the highest overall grade."
+      timePeriod="August 2022 - July 2026"
+      skills={[
+        "Overall: 5.6",
+      ]}
+    />
+  </Timeline>
+</div>
+
+      <div class="pt-6">
         <h2
           class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
         >
           Extracurriculars
         </h2>
         <Timeline>
-          <TimelineItem
-            name="Committee Member - CoaA"
-            logo={ubsLogo}
-            fallback="CM"
-            description="Committee member of UBS Community of Active Apprentices (CoaA), organizing events, fostering peer networking, and representing apprentice interests to strengthen connections across the company."
-            timePeriod="August 2024 - Present"
-            skills={[
-              "Leadership",
-              "Event Planning",
-              "Communication",
-              "Networking",
-              "Organization",
-            ]}
-          />
-
-          <TimelineItem
-            name="Cohort Representative"
-            logo={ubsLogo}
-            fallback="CR"
-            description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship cohort."
-            timePeriod="August 2022 - Present"
-            skills={["Leadership", "Communication", "Organization", "Advocacy"]}
-          />
-
           <TimelineItem
             name="Ambassador"
             logo={swissSkillsAmbassadorLogo}
@@ -244,6 +254,32 @@
               "Event Participation",
               "Professional Representation",
             ]}
+          />
+
+          <TimelineItem
+            name="Committee Member - CoaA"
+            logo={ubsLogo}
+            fallback="CM"
+            description="Committee member of UBS Community of Active Apprentices (CoaA), organizing events, fostering peer networking, and representing apprentice interests to strengthen connections across the company."
+            timePeriod="August 2024 - July 2026"
+            past
+            skills={[
+              "Leadership",
+              "Event Planning",
+              "Communication",
+              "Networking",
+              "Organization",
+            ]}
+          />
+
+          <TimelineItem
+            name="Cohort Representative"
+            logo={ubsLogo}
+            fallback="CR"
+            description="Main point of contact between apprentices and training supervisors, communicating feedback and managing organizational matters for my apprenticeship cohort."
+            timePeriod="August 2022 - July 2026"
+            past
+            skills={["Leadership", "Communication", "Organization", "Advocacy"]}
           />
         </Timeline>
       </div>
