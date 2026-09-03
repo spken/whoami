@@ -468,31 +468,10 @@ body {
   }
 }
 
-/* Scroll area for the page content. */
-.sheet-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: var(--catppuccin-color-surface2) transparent;
-  /* Copy dissolves at the top and bottom edges as it scrolls. */
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    #000 3rem,
-    #000 calc(100% - 4rem),
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    #000 3rem,
-    #000 calc(100% - 4rem),
-    transparent 100%
-  );
-}
-
 /*
  * Copy sits directly on the scrimmed painting, so glyphs carry a touch of
  * their own shadow instead of a panel carrying it for them.
  */
-.sheet-scroll :is(h1, h2, h3, p, span, a) {
+.page-copy :is(h1, h2, h3, p, span, a) {
   text-shadow: 0 1px 3px color-mix(in oklab, var(--catppuccin-color-crust) 70%, transparent);
 }

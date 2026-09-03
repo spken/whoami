@@ -13,28 +13,6 @@
     skills?: string[];
   }
 
-  const skillColors = [
-    "text-ctp-red",
-    "text-ctp-peach",
-    "text-ctp-yellow",
-    "text-ctp-green",
-    "text-ctp-teal",
-    "text-ctp-sky",
-    "text-ctp-sapphire",
-    "text-ctp-blue",
-    "text-ctp-lavender",
-    "text-ctp-mauve",
-    "text-ctp-pink",
-  ];
-
-  function getSkillColor(seed: string): string {
-    let hash = 0;
-    for (let i = 0; i < seed.length; i++) {
-      hash = seed.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    return skillColors[Math.abs(hash) % skillColors.length];
-  }
-
   let {
     name,
     logo,
@@ -98,7 +76,7 @@
         <div class="flex flex-wrap gap-1.5">
           {#each skills as skill (skill)}
             <span
-              class="text-xs font-medium px-2 py-0.5 rounded-sm {getSkillColor(skill)} bg-ctp-crust/45"
+              class="text-xs font-medium px-2 py-0.5 rounded-sm text-ctp-subtext0 bg-ctp-crust/45"
             >
               {skill}
             </span>

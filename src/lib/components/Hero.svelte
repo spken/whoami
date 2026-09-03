@@ -16,13 +16,13 @@
   import swissSkillsAmbassadorLogo from "$lib/assets/swiss-skills-logo.jpg";
 </script>
 
-<section>
+<section class="mt-12 mb-12">
   <h1 class="text-2xl sm:text-5xl font-bold mb-6 leading-tight tracking-tight">
     <span class="text-ctp-subtext0">whoami:</span>
     <span class="accent">Matias Varela</span>
   </h1>
 
-  <div class="space-y-8">
+  <div class="max-w-2xl space-y-8">
     <p class="text-lg text-ctp-text leading-relaxed font-medium">
       AI Engineer @ <HoverCard.Root>
         <HoverCard.Trigger
