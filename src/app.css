@@ -468,8 +468,8 @@ body {
   }
 }
 
-/* Scroll area inside the terminal window. */
-.window-scroll {
+/* Scroll area inside the content sheet. */
+.sheet-scroll {
   scrollbar-width: thin;
   scrollbar-color: var(--catppuccin-color-surface2) transparent;
 }

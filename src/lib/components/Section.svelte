@@ -10,12 +10,13 @@
 </script>
 
 <section>
-  <!-- Headings read as shell prompts, matching the window the page sits in. -->
-  <h2 class="mb-6 text-sm font-mono lowercase tracking-tight">
-    <span class="accent font-bold">~</span>
-    <span class="text-ctp-overlay1">$</span>
-    <span class="text-ctp-text font-semibold">{title}</span>
-  </h2>
+  <!-- Quiet label plus a hairline that runs to the edge of the column. -->
+  <div class="flex items-center gap-4 mb-7">
+    <h2 class="text-xs font-mono uppercase tracking-[0.18em] text-ctp-subtext0 whitespace-nowrap">
+      {title}
+    </h2>
+    <span class="h-px flex-1 bg-ctp-surface0" aria-hidden="true"></span>
+  </div>
 
   {@render children()}
 </section>
