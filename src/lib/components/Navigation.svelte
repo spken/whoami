@@ -17,26 +17,25 @@
   }
 </script>
 
-<nav class="mb-8">
-  <div class="flex items-center justify-between">
-    <div class="flex items-center gap-1.5 text-sm font-mono">
-      <a
-        href={resolve("/")}
-        class="accent font-bold hover:opacity-80 transition-opacity hover:underline"
-        >~</a
-      >
-      <span class="text-ctp-subtext0 font-bold">/</span>
-      <span class="cursor"></span>
-    </div>
-
-    <button
-      onclick={() => (showThemeSelector = !showThemeSelector)}
-      class="text-sm font-mono text-ctp-subtext0 hover:text-ctp-text transition-colors px-2 py-1 rounded hover:bg-ctp-surface0/30 hover:cursor-pointer"
-      title="Change theme"
+<div class="flex flex-1 items-center justify-between">
+  <div class="flex items-center gap-1.5 text-sm font-mono">
+    <a
+      href={resolve("/")}
+      class="accent font-bold hover:opacity-80 transition-opacity hover:underline"
+      >~</a
     >
-      <span class="font-bold">[</span>theme<span class="font-bold">]</span>
-    </button>
+    <span class="text-ctp-subtext0 font-bold">/</span>
+    <span class="cursor"></span>
   </div>
+
+  <button
+    onclick={() => (showThemeSelector = !showThemeSelector)}
+    class="text-xs font-mono text-ctp-subtext0 hover:text-ctp-text transition-colors px-2 py-1 rounded hover:bg-ctp-surface0/50 hover:cursor-pointer"
+    title="Change theme"
+  >
+    <span class="font-bold">[</span>theme<span class="font-bold">]</span>
+  </button>
+</div>
 
   {#if showThemeSelector}
     <div
@@ -53,4 +52,3 @@
       </div>
     </div>
   {/if}
-</nav>

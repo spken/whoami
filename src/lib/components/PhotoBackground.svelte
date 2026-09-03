@@ -16,11 +16,11 @@
 
   let {
     src = "/socrates.jpg",
-    opacity = 0.45,
-    blur = 3,
+    opacity = 0.9,
+    blur = 0,
     tint = "#d8b46a",
     tintOpacity = 0.35,
-    vignette = 0.55,
+    vignette = 0.5,
   }: Props = $props();
 </script>
 
@@ -29,7 +29,7 @@
   <div
     class="absolute -inset-8 bg-cover bg-center"
     style:background-image="url({src})"
-    style:filter="grayscale(0.3) contrast(1.12) blur({blur}px)"
+    style:filter="grayscale(0.15) contrast(1.05) blur({blur}px)"
     style:opacity
   ></div>
 
