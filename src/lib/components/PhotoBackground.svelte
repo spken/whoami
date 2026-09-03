@@ -20,7 +20,7 @@
     blur = 0,
     tint = "#d8b46a",
     tintOpacity = 0.35,
-    vignette = 0.5,
+    vignette = 0.35,
   }: Props = $props();
 </script>
 

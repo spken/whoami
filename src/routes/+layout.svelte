@@ -42,11 +42,11 @@
 </svelte:head>
 
 <div
-  class="relative min-h-screen bg-ctp-base text-ctp-text transition-colors duration-300"
+  class="relative h-dvh overflow-hidden bg-ctp-base text-ctp-text transition-colors duration-300"
 >
   <PhotoBackground tint={accentHex} />
 
-  <div class="relative z-10">
+  <div class="relative z-10 h-full">
     {@render children()}
   </div>
 </div>

@@ -467,3 +467,9 @@ body {
     opacity: 0;
   }
 }
+
+/* Scroll area inside the terminal window. */
+.window-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--catppuccin-color-surface2) transparent;
+}

@@ -22,7 +22,7 @@
     <span class="accent">Matias Varela</span>
   </h1>
 
-  <div class="max-w-2xl space-y-8">
+  <div class="space-y-8">
     <p class="text-lg text-ctp-text leading-relaxed font-medium">
       AI Engineer @ <HoverCard.Root>
         <HoverCard.Trigger

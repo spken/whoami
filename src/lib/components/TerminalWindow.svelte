@@ -17,10 +17,10 @@
   window sitting on top of it rather than directly on the image.
 -->
 <div
-  class="rounded-xl overflow-hidden border border-ctp-surface1/70 shadow-2xl shadow-ctp-crust/60 backdrop-blur-sm"
+  class="flex h-full flex-col rounded-xl overflow-hidden border border-ctp-surface1/70 shadow-2xl shadow-ctp-crust/60"
 >
   <header
-    class="relative flex items-center gap-4 h-11 px-4 bg-ctp-mantle/95 border-b border-ctp-surface0"
+    class="relative flex shrink-0 items-center gap-4 h-11 px-4 bg-ctp-mantle/95 border-b border-ctp-surface0"
   >
     <div class="flex items-center gap-2" aria-hidden="true">
       <span class="size-3 rounded-full bg-ctp-red"></span>
@@ -39,7 +39,8 @@
     </span>
   </header>
 
-  <div class="bg-ctp-base/95 px-5 py-8 sm:px-10 sm:py-12">
+  <!-- The window is viewport-bound; the page scrolls inside it, not behind it. -->
+  <div class="window-scroll flex-1 overflow-y-auto bg-ctp-base/95 px-5 py-8 sm:px-10 sm:py-12">
     {@render children()}
   </div>
 </div>
