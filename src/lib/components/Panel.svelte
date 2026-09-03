@@ -2,7 +2,7 @@
   import type { Snippet } from "svelte";
 
   interface Props {
-    /** Controls pinned to the top of the sheet, above the content. */
+    /** Controls pinned above the scrolling content. */
     header?: Snippet;
     children: Snippet;
   }
@@ -11,19 +11,22 @@
 </script>
 
 <!--
-  A bounded sheet on top of the painting: viewport-height, scrolling its own
-  content, so the image stays fully visible around it instead of being covered.
+  No card, no edges. A soft field of base colour sits under the text and fades
+  out in every direction, so the content dissolves into the painting rather
+  than sitting on a plate over it.
 -->
-<div
-  class="flex h-full flex-col rounded-2xl overflow-hidden bg-ctp-base/95 border border-ctp-surface0/80 shadow-2xl shadow-ctp-crust/50"
->
-  {#if header}
-    <div class="shrink-0 px-5 pt-5 sm:px-12 sm:pt-8">
-      {@render header()}
-    </div>
-  {/if}
+<div class="relative h-full">
+  <div class="sheet-ground" aria-hidden="true"></div>
 
-  <div class="sheet-scroll flex-1 overflow-y-auto px-5 pb-10 pt-6 sm:px-12 sm:pb-16">
-    {@render children()}
+  <div class="relative flex h-full flex-col">
+    {#if header}
+      <div class="shrink-0 px-5 pt-5 sm:px-10 sm:pt-8">
+        {@render header()}
+      </div>
+    {/if}
+
+    <div class="sheet-scroll flex-1 overflow-y-auto px-5 pb-16 pt-6 sm:px-10 sm:pb-24">
+      {@render children()}
+    </div>
   </div>
 </div>

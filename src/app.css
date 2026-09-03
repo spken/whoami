@@ -468,8 +468,49 @@ body {
   }
 }
 
-/* Scroll area inside the content sheet. */
+/* Scroll area for the page content. */
 .sheet-scroll {
   scrollbar-width: thin;
   scrollbar-color: var(--catppuccin-color-surface2) transparent;
+  /* Copy dissolves at the top and bottom edges as it scrolls. */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 3rem,
+    #000 calc(100% - 4rem),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 3rem,
+    #000 calc(100% - 4rem),
+    transparent 100%
+  );
+}
+
+/*
+ * The ground under the copy: opaque enough to read on in the middle, faded to
+ * nothing at the edges so there is no visible boundary against the painting.
+ */
+.sheet-ground {
+  position: absolute;
+  inset: -6rem -8rem;
+  background-color: color-mix(
+    in oklab,
+    var(--catppuccin-color-base) 88%,
+    transparent
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  -webkit-mask-image: radial-gradient(
+    ellipse 62% 58% at 50% 50%,
+    #000 55%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 62% 58% at 50% 50%,
+    #000 55%,
+    transparent 100%
+  );
 }
