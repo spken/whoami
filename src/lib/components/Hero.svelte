@@ -7,6 +7,8 @@
   import MailIcon from "@lucide/svelte/icons/mail";
   import DownloadIcon from "@lucide/svelte/icons/download";
   import Section from "./Section.svelte";
+  import Sections from "./Sections.svelte";
+  import { designMode } from "$lib/designMode.svelte";
   import Timeline from "./Timeline.svelte";
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
@@ -14,6 +16,13 @@
   import bzzLogo from "$lib/assets/bzz-logo.jpg";
   import swissSkillsLogo from "$lib/assets/swiss-skills-2025-logo.jpg";
   import swissSkillsAmbassadorLogo from "$lib/assets/swiss-skills-logo.jpg";
+
+  let mode = $derived(designMode());
+
+  // Variant 1 pushes the whole column aside so the painting keeps the margins.
+  let column = $derived(
+    mode === 1 ? "max-w-xl lg:ml-[42%] space-y-8" : "max-w-2xl space-y-8",
+  );
 </script>
 
 <section class="mt-12 mb-12">
@@ -22,7 +31,7 @@
     <span class="accent">Matias Varela</span>
   </h1>
 
-  <div class="max-w-2xl space-y-8">
+  <div class={column}>
     <p class="text-lg text-ctp-text leading-relaxed font-medium">
       AI Engineer @ <HoverCard.Root>
         <HoverCard.Trigger
@@ -117,7 +126,8 @@
       </a>
     </div>
 
-    <div class="pt-6 space-y-6">
+    <div class="pt-6">
+      <Sections>
       <Section title="Experience">
         <Timeline>
           <TimelineItem
@@ -259,6 +269,7 @@
           />
         </Timeline>
       </Section>
+      </Sections>
     </div>
   </div>
 </section>
