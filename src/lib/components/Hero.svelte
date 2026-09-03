@@ -6,6 +6,7 @@
   import LinkedinIcon from "@lucide/svelte/icons/linkedin";
   import MailIcon from "@lucide/svelte/icons/mail";
   import DownloadIcon from "@lucide/svelte/icons/download";
+  import Section from "./Section.svelte";
   import Timeline from "./Timeline.svelte";
   import TimelineItem from "./TimelineItem.svelte";
   import ubsLogo from "$lib/assets/ubs-logo.jpg";
@@ -23,17 +24,13 @@
 
   <div class="max-w-2xl space-y-8">
     <p class="text-lg text-ctp-text leading-relaxed font-medium">
-      I'm currently working as an AI Engineer @
-      <HoverCard.Root>
+      AI Engineer @ <HoverCard.Root>
         <HoverCard.Trigger
           href="https://www.ubs.com"
           target="_blank"
           rel="noopener noreferrer"
           class="accent underline"
-        >
-          UBS
-        </HoverCard.Trigger>{''}.
-        <HoverCard.Content class="w-80">
+        >UBS</HoverCard.Trigger><HoverCard.Content class="w-80">
           <div class="flex justify-between space-x-4">
             <Avatar.Root>
               <Avatar.Image src={ubsLogo} />
@@ -53,13 +50,8 @@
               </div>
             </div>
           </div>
-        </HoverCard.Content>
-      </HoverCard.Root>I spend my days turning AI ideas into
-      production-shaped software: building AI-driven vulnerability management
-      systems with Autogen and LangGraph, SOC incident-handling workflows, and
-      other projects that help security teams sleep a little better. My
-      background in Cybersecurity Architecture and Innovation means I tend to
-      think like a builder, a tester, and a friendly menace to brittle systems.
+        </HoverCard.Content></HoverCard.Root>, where I build AI solutions for security and tech
+      services. Mostly Python, React, and fighting my agent.
     </p>
 
     <div class="flex items-center gap-4 pt-4">
@@ -125,19 +117,14 @@
       </a>
     </div>
 
-    <div class="pt-6 space-y-8">
-      <div>
-        <h2
-          class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
-        >
-          Experience
-        </h2>
+    <div class="pt-6 space-y-6">
+      <Section title="Experience">
         <Timeline>
           <TimelineItem
             name="UBS - AI Engineer"
             logo={ubsLogo}
             fallback="UBS"
-            description="AI Engineer @ UBS. Working in Joint AI Execution and Enablement, with background in Cybersecurity Architecture and Innovation."
+            description="Joint AI Execution and Enablement — AI-driven vulnerability management and SOC incident-handling systems."
             timePeriod="August 2026 - Present"
             link="https://www.ubs.com"
             skills={[
@@ -158,7 +145,7 @@
             name="UBS - Apprenticeship"
             logo={ubsLogo}
             fallback="UBS"
-            description="Junior SWE @ UBS. Turning AI ideas into production-shaped software across AI Execution and Enablement, with a background in Cybersecurity Architecture and Innovation."
+            description="Four-year software engineering apprenticeship, spent across Cybersecurity Architecture &amp; Innovation and AI Execution &amp; Enablement."
             timePeriod="August 2022 - July 2026"
             link="https://www.ubs.com"
             past
@@ -180,7 +167,7 @@
             name="SAYNT"
             logo={sayntLogo}
             fallback="SA"
-            description="Built a full-stack mobile application that helps collectors discover and invest in luxury goods (watches & handbags) with data-, and AI-driven insights."
+            description="Full-stack mobile app for collectors investing in watches and handbags, with data- and AI-driven price insights."
             timePeriod="October 2025 - November 2025"
             link="https://www.linkedin.com/feed/update/urn:li:activity:7394429736325885954/"
             past
@@ -198,16 +185,10 @@
             skills={["Electron", "MySQL", "Problem Solving", "Time Management"]}
           />
         </Timeline>
-      </div>
+      </Section>
 
-      <div class="pt-6">
-  <h2
-    class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
-  >
-    Honors & Awards
-  </h2>
-
-  <Timeline>
+      <Section title="Honors & Awards">
+        <Timeline>
     <TimelineItem
       name="Federal VET Diploma, Software Engineering"
       logo={bzzLogo}
@@ -230,21 +211,16 @@
         "Overall: 5.6",
       ]}
     />
-  </Timeline>
-</div>
+        </Timeline>
+      </Section>
 
-      <div class="pt-6">
-        <h2
-          class="text-lg font-semibold mb-6 text-ctp-subtext0 flex items-center gap-2"
-        >
-          Extracurriculars
-        </h2>
+      <Section title="Extracurriculars">
         <Timeline>
           <TimelineItem
             name="Ambassador"
             logo={swissSkillsAmbassadorLogo}
             fallback="SS"
-            description="As a SwissSkills Ambassador, I represent my profession and the SwissSkills movement, promoting the value of vocational education and training in Switzerland. I share my experiences to inspire young talents, contribute to public events and engagements, and support the visibility and recognition of skilled professions."
+            description="Representing my profession at SwissSkills events, making the case for vocational education to people deciding what to do next."
             timePeriod="December 2025 - Present"
             link="https://www.swiss-skills.ch"
             skills={[
@@ -260,7 +236,7 @@
             name="Committee Member - CoaA"
             logo={ubsLogo}
             fallback="CM"
-            description="Committee member of UBS Community of Active Apprentices (CoaA), organizing events, fostering peer networking, and representing apprentice interests to strengthen connections across the company."
+            description="Ran events for the UBS Community of Active Apprentices and represented apprentice interests to the business."
             timePeriod="August 2024 - July 2026"
             past
             skills={[
@@ -282,7 +258,7 @@
             skills={["Leadership", "Communication", "Organization", "Advocacy"]}
           />
         </Timeline>
-      </div>
+      </Section>
     </div>
   </div>
 </section>
