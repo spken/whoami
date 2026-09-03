@@ -23,17 +23,13 @@
 
   <div class="max-w-2xl space-y-8">
     <p class="text-lg text-ctp-text leading-relaxed font-medium">
-      I'm currently working as an AI Engineer @
-      <HoverCard.Root>
+      AI Engineer @ <HoverCard.Root>
         <HoverCard.Trigger
           href="https://www.ubs.com"
           target="_blank"
           rel="noopener noreferrer"
           class="accent underline"
-        >
-          UBS
-        </HoverCard.Trigger>{''}.
-        <HoverCard.Content class="w-80">
+        >UBS</HoverCard.Trigger><HoverCard.Content class="w-80">
           <div class="flex justify-between space-x-4">
             <Avatar.Root>
               <Avatar.Image src={ubsLogo} />
@@ -53,13 +49,8 @@
               </div>
             </div>
           </div>
-        </HoverCard.Content>
-      </HoverCard.Root>I spend my days turning AI ideas into
-      production-shaped software: building AI-driven vulnerability management
-      systems with Autogen and LangGraph, SOC incident-handling workflows, and
-      other projects that help security teams sleep a little better. My
-      background in Cybersecurity Architecture and Innovation means I tend to
-      think like a builder, a tester, and a friendly menace to brittle systems.
+        </HoverCard.Content></HoverCard.Root>, where I build AI solutions for security and tech
+      services. Mostly Python, React, and fighting my agent.
     </p>
 
     <div class="flex items-center gap-4 pt-4">
