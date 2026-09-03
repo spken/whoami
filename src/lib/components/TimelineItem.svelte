@@ -50,7 +50,7 @@
 <div class="relative flex items-start gap-6 group">
   <!-- Timeline dot -->
   <div
-    class="relative z-10 flex-shrink-0 size-10 rounded-full bg-ctp-base border-2 border-ctp-surface2 flex items-center justify-center transition-all duration-300 group-hover:border-accent-color group-hover:scale-105 accent-glow overflow-hidden"
+    class="relative z-10 flex-shrink-0 size-10 rounded-full bg-ctp-crust/70 backdrop-blur-sm border-2 border-ctp-overlay0/50 flex items-center justify-center transition-all duration-300 group-hover:border-accent-color group-hover:scale-105 accent-glow overflow-hidden"
   >
     <Avatar.Root class="size-8">
       {#if logo}
@@ -64,7 +64,7 @@
     class="flex-1 pb-2 transition-all duration-300 group-hover:-translate-y-0.5"
   >
     <div
-      class="rounded-lg p-4 -m-4 transition-all duration-300 group-hover:bg-ctp-surface0/50 group-hover:shadow-lg"
+      class="rounded-lg p-4 -m-4 transition-all duration-300 group-hover:bg-ctp-surface0/30"
     >
       <a
         class="inline-block {link ? 'cursor-pointer' : ''}"
@@ -98,7 +98,7 @@
         <div class="flex flex-wrap gap-1.5">
           {#each skills as skill (skill)}
             <span
-              class="text-xs font-medium px-2 py-0.5 rounded-sm {getSkillColor(skill)} bg-ctp-surface1/50"
+              class="text-xs font-medium px-2 py-0.5 rounded-sm {getSkillColor(skill)} bg-ctp-crust/45"
             >
               {skill}
             </span>

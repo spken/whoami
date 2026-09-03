@@ -2,47 +2,45 @@
   interface Props {
     /** Image used as the page backdrop. */
     src?: string;
-    /** Opacity of the photo layer, 0-1. */
-    opacity?: number;
-    /** Softening blur in px. 0 keeps the painting sharp. */
-    blur?: number;
     /** Tint colour laid over the photo with a soft-light blend. */
     tint?: string;
     /** Strength of that tint, 0-1. */
     tintOpacity?: number;
-    /** Corner darkening, 0-1. */
-    vignette?: number;
+    /** Strength of the flat scrim that makes the page readable, 0-1. */
+    scrim?: number;
   }
 
   let {
     src = "/socrates.jpg",
-    opacity = 0.9,
-    blur = 0,
     tint = "#d8b46a",
-    tintOpacity = 0.35,
-    vignette = 0.35,
+    tintOpacity = 0.18,
+    scrim = 0.74,
   }: Props = $props();
 </script>
 
 <div class="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
-  <!-- Photo. Scaled up slightly so the blur doesn't feather in at the edges. -->
+  <!-- The painting, full strength and sharp. -->
   <div
-    class="absolute -inset-8 bg-cover bg-center"
+    class="absolute inset-0 bg-cover bg-center"
     style:background-image="url({src})"
-    style:filter="grayscale(0.15) contrast(1.05) blur({blur}px)"
-    style:opacity
+    style:filter="saturate(0.9) contrast(1.02)"
   ></div>
 
-  <!-- Accent tint. -->
+  <!--
+    One flat, uniform scrim across the whole image. Uniform is the point: it
+    drops the painting's contrast far enough for copy to sit directly on it,
+    with no panel, no edge and no seam anywhere on the page.
+  -->
+  <div
+    class="absolute inset-0"
+    style:background-color="var(--catppuccin-color-crust)"
+    style:opacity={scrim}
+  ></div>
+
+  <!-- Accent tint, tying the backdrop to the active theme. -->
   <div
     class="absolute inset-0 mix-blend-soft-light"
     style:background-color={tint}
     style:opacity={tintOpacity}
-  ></div>
-
-  <!-- Vignette: pulls the eye inward and keeps edge copy legible. -->
-  <div
-    class="absolute inset-0"
-    style:background="radial-gradient(ellipse at center, transparent 25%, rgba(0,0,0,{vignette}) 100%)"
   ></div>
 </div>

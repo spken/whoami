@@ -490,27 +490,9 @@ body {
 }
 
 /*
- * The ground under the copy: opaque enough to read on in the middle, faded to
- * nothing at the edges so there is no visible boundary against the painting.
+ * Copy sits directly on the scrimmed painting, so glyphs carry a touch of
+ * their own shadow instead of a panel carrying it for them.
  */
-.sheet-ground {
-  position: absolute;
-  inset: -6rem -8rem;
-  background-color: color-mix(
-    in oklab,
-    var(--catppuccin-color-base) 88%,
-    transparent
-  );
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  -webkit-mask-image: radial-gradient(
-    ellipse 62% 58% at 50% 50%,
-    #000 55%,
-    transparent 100%
-  );
-  mask-image: radial-gradient(
-    ellipse 62% 58% at 50% 50%,
-    #000 55%,
-    transparent 100%
-  );
+.sheet-scroll :is(h1, h2, h3, p, span, a) {
+  text-shadow: 0 1px 3px color-mix(in oklab, var(--catppuccin-color-crust) 70%, transparent);
 }

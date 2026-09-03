@@ -15,7 +15,7 @@
     <h2 class="text-xs font-mono uppercase tracking-[0.18em] text-ctp-subtext0 whitespace-nowrap">
       {title}
     </h2>
-    <span class="h-px flex-1 bg-ctp-surface0" aria-hidden="true"></span>
+    <span class="h-px flex-1 bg-ctp-overlay0/40" aria-hidden="true"></span>
   </div>
 
   {@render children()}
