@@ -2,6 +2,7 @@
   import "../app.css";
   import { themeStore } from "$lib/stores/theme.svelte";
   import PhotoBackground from "$lib/components/PhotoBackground.svelte";
+  import { findPainting } from "$lib/paintings";
   import { onMount } from "svelte";
 
   let { children } = $props();
@@ -25,6 +26,8 @@
 
   let accentHex = $derived(accentColors[themeStore.accent] || accentColors.red);
 
+  let painting = $derived(findPainting(themeStore.backdrop));
+
   let faviconUrl = $derived.by(() => {
     const color = accentHex;
     const iconSvg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><rect x='2' y='2' width='20' height='20' rx='2' fill='#1e1e1e'/><rect x='2' y='2' width='20' height='20' rx='2' stroke='#3d3d3d' stroke-width='0.5' fill='none'/><rect x='2' y='2' width='20' height='4' fill='#2d2d2d'/><circle cx='4.5' cy='4' r='0.8' fill='#ff5f56'/><circle cx='6.5' cy='4' r='0.8' fill='#ffbd2e'/><circle cx='8.5' cy='4' r='0.8' fill='#27c93f'/><path d='M 6 10 L 10 13 L 6 16' stroke='${color}' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/><rect x='11' y='12' width='2' height='3' fill='${color}'/></svg>`;
@@ -44,7 +47,7 @@
 <div
   class="relative min-h-screen bg-ctp-base text-ctp-text transition-colors duration-300"
 >
-  <PhotoBackground tint={accentHex} />
+  <PhotoBackground {painting} tint={accentHex} />
 
   <div class="relative z-10">
     {@render children()}

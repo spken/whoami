@@ -60,7 +60,7 @@
       </a>
 
       <p
-        class="text-sm text-ctp-subtext0 mb-2 transition-colors duration-200 group-hover:text-ctp-subtext1"
+        class="text-sm text-ctp-subtext1 mb-2 transition-colors duration-200 group-hover:text-ctp-text"
       >
         {description}
       </p>
@@ -76,7 +76,7 @@
         <div class="flex flex-wrap gap-1.5">
           {#each skills as skill (skill)}
             <span
-              class="text-xs font-medium px-2 py-0.5 rounded-sm text-ctp-subtext0 bg-ctp-crust/45"
+              class="text-xs font-medium px-2 py-0.5 rounded-sm text-ctp-subtext1 bg-ctp-crust/60"
             >
               {skill}
             </span>
