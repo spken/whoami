@@ -1,5 +1,6 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
+  import { asset } from "$app/paths";
   import { defaultPainting, type Painting } from "$lib/paintings";
 
   interface Props {
@@ -55,7 +56,7 @@
   {#key painting.id}
     <div
       class="absolute inset-0 bg-cover"
-      style:background-image="url({painting.src})"
+      style:background-image="url({asset(painting.src)})"
       style:background-position={painting.position}
       style:filter="contrast(1.02)"
       style:transform="scale({painting.scale}) translateX({painting.shiftX}%)"

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { asset } from "$app/paths";
   import * as HoverCard from "./ui/hover-card";
   import * as Avatar from "./ui/avatar";
   import CalendarDaysIcon from "@lucide/svelte/icons/calendar-days";
@@ -102,7 +103,7 @@
       </a>
 
       <a
-        href="cv_matias-varela-cousillas_2026.pdf"
+        href={asset("/cv_matias-varela-cousillas_2026.pdf")}
         download
         class="group flex items-center gap-2 transition-colors"
         title="Download CV"

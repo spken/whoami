@@ -7,12 +7,15 @@
  * to push the subject clear of the text column. Bright canvases also ask for a
  * heavier scrim than the dark ones.
  */
+import type { Asset } from "$app/types";
+
 export interface Painting {
   id: string;
   title: string;
   artist: string;
   year: string;
-  src: string;
+  /** Path under `static/`; resolve with `asset()` before use. */
+  src: Asset;
   /** Crop anchor for the cover fit. */
   position: string;
   /** Zoom on top of the cover fit. */
