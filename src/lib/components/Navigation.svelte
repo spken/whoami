@@ -31,7 +31,7 @@
 
     <button
       onclick={() => (showThemeSelector = !showThemeSelector)}
-      class="text-sm font-mono text-ctp-subtext0 hover:text-ctp-text transition-colors px-2 py-1 rounded hover:bg-ctp-surface0/30 hover:cursor-pointer"
+      class="text-sm font-mono text-ctp-subtext0 hover:text-ctp-text transition-colors px-2 py-1 rounded hover:bg-ctp-surface0/50 hover:cursor-pointer"
       title="Change theme"
     >
       <span class="font-bold">[</span>theme<span class="font-bold">]</span>

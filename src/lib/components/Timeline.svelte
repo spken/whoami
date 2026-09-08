@@ -11,7 +11,7 @@
 <div class="relative">
   <!-- Vertical line with gradient -->
   <div
-    class="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-ctp-surface2 via-ctp-overlay0 to-ctp-surface2"
+    class="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-ctp-overlay0/30 via-ctp-overlay1/60 to-ctp-overlay0/30"
     aria-hidden="true"
   ></div>
 

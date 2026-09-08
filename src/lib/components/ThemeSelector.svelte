@@ -5,6 +5,7 @@
     type CatppuccinFlavor,
     type AccentColor,
   } from "$lib/stores/theme.svelte";
+  import { paintings } from "$lib/paintings";
 
   const themes: { name: CatppuccinFlavor; label: string }[] = [
     { name: "latte", label: "Latte" },
@@ -32,7 +33,7 @@
 </script>
 
 <div
-  class="flex flex-col gap-4 p-6 rounded-lg bg-ctp-surface0/30 border border-ctp-surface1"
+  class="flex flex-col gap-4 p-6 rounded-lg bg-ctp-surface0/30 border border-ctp-surface1 w-[26rem] max-w-[calc(100vw-2rem)]"
 >
   <!-- Header -->
   <div class="flex items-center gap-1.5 text-sm font-mono mb-2">
@@ -57,7 +58,7 @@
             onclick={() => themeStore.setFlavor(theme.name)}
             class="px-2 py-1 text-xs rounded transition-all {theme.name} bg-ctp-base text-ctp-text hover:cursor-pointer"
             class:ring-2={themeStore.current === theme.name}
-            class:ring-ctp-blue={themeStore.current === theme.name}
+            class:ring-accent={themeStore.current === theme.name}
             title={theme.label}
           >
             {theme.label}
@@ -80,6 +81,33 @@
             style="background-color: var(--catppuccin-color-{color.name})"
             title={color.label}
           >
+          </button>
+        {/each}
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <span class="text-xs font-medium text-ctp-subtext0">Backdrop:</span>
+      <div class="flex flex-col" role="radiogroup" aria-label="Backdrop painting">
+        {#each paintings as painting (painting.id)}
+          {@const selected = themeStore.backdrop === painting.id}
+          <button
+            onclick={() => themeStore.setBackdrop(painting.id)}
+            role="radio"
+            aria-checked={selected}
+            class="flex items-baseline gap-2 text-left font-mono text-xs px-2 py-1.5 rounded transition-colors hover:bg-ctp-surface0/50 hover:cursor-pointer"
+            class:bg-ctp-surface0={selected}
+          >
+            <span
+              class="font-bold {selected ? 'accent' : 'text-ctp-surface2'}"
+              aria-hidden="true">&gt;</span
+            >
+            <span class="truncate min-w-0 {selected ? 'accent' : 'text-ctp-text'}"
+              >{painting.title}</span
+            >
+            <span class="text-[10px] text-ctp-subtext0 whitespace-nowrap ml-auto"
+              >{painting.artist}, {painting.year}</span
+            >
           </button>
         {/each}
       </div>

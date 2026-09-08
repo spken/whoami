@@ -1,3 +1,5 @@
+import { defaultPainting, findPainting } from "$lib/paintings";
+
 export type CatppuccinFlavor = "latte" | "frappe" | "macchiato" | "mocha";
 export type AccentColor =
   | "rosewater"
@@ -18,6 +20,7 @@ export type AccentColor =
 interface ThemeState {
   current: CatppuccinFlavor;
   accent: AccentColor;
+  backdrop: string;
 }
 
 function createThemeStore() {
@@ -30,6 +33,10 @@ function createThemeStore() {
       (typeof window !== "undefined"
         ? (localStorage.getItem("catppuccin-accent") as AccentColor)
         : "red") || "red",
+    backdrop:
+      (typeof window !== "undefined"
+        ? findPainting(localStorage.getItem("backdrop-painting")).id
+        : defaultPainting.id) || defaultPainting.id,
   });
 
   return {
@@ -38,6 +45,9 @@ function createThemeStore() {
     },
     get accent() {
       return state.accent;
+    },
+    get backdrop() {
+      return state.backdrop;
     },
     setFlavor(flavor: CatppuccinFlavor) {
       state.current = flavor;
@@ -59,6 +69,12 @@ function createThemeStore() {
         document.documentElement.setAttribute("data-accent", accent);
       }
     },
+    setBackdrop(id: string) {
+      state.backdrop = findPainting(id).id;
+      if (typeof window !== "undefined") {
+        localStorage.setItem("backdrop-painting", state.backdrop);
+      }
+    },
     initialize() {
       if (typeof window !== "undefined") {
         const savedFlavor = localStorage.getItem(
@@ -73,6 +89,9 @@ function createThemeStore() {
         if (savedAccent) {
           state.accent = savedAccent;
         }
+        state.backdrop = findPainting(
+          localStorage.getItem("backdrop-painting"),
+        ).id;
         document.documentElement.classList.remove(
           "latte",
           "frappe",

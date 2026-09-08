@@ -10,64 +10,75 @@ body {
   font-family: "JetBrains Mono", monospace;
 }
 
+/* One handle on the active accent, so chrome can ring and mark itself
+   in the same colour the copy uses. */
+:root {
+  --accent: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="rosewater"] {
+  --accent: var(--catppuccin-color-rosewater);
+}
+
+[data-accent="flamingo"] {
+  --accent: var(--catppuccin-color-flamingo);
+}
+
+[data-accent="pink"] {
+  --accent: var(--catppuccin-color-pink);
+}
+
+[data-accent="mauve"] {
+  --accent: var(--catppuccin-color-mauve);
+}
+
+[data-accent="red"] {
+  --accent: var(--catppuccin-color-red);
+}
+
+[data-accent="maroon"] {
+  --accent: var(--catppuccin-color-maroon);
+}
+
+[data-accent="peach"] {
+  --accent: var(--catppuccin-color-peach);
+}
+
+[data-accent="yellow"] {
+  --accent: var(--catppuccin-color-yellow);
+}
+
+[data-accent="green"] {
+  --accent: var(--catppuccin-color-green);
+}
+
+[data-accent="teal"] {
+  --accent: var(--catppuccin-color-teal);
+}
+
+[data-accent="sky"] {
+  --accent: var(--catppuccin-color-sky);
+}
+
+[data-accent="sapphire"] {
+  --accent: var(--catppuccin-color-sapphire);
+}
+
+[data-accent="blue"] {
+  --accent: var(--catppuccin-color-blue);
+}
+
+[data-accent="lavender"] {
+  --accent: var(--catppuccin-color-lavender);
+}
+
 .accent {
-  color: var(--catppuccin-color-rosewater);
+  color: var(--accent);
 }
 
-[data-accent="rosewater"] .accent {
-  color: var(--catppuccin-color-rosewater);
-}
-
-[data-accent="flamingo"] .accent {
-  color: var(--catppuccin-color-flamingo);
-}
-
-[data-accent="pink"] .accent {
-  color: var(--catppuccin-color-pink);
-}
-
-[data-accent="mauve"] .accent {
-  color: var(--catppuccin-color-mauve);
-}
-
-[data-accent="red"] .accent {
-  color: var(--catppuccin-color-red);
-}
-
-[data-accent="maroon"] .accent {
-  color: var(--catppuccin-color-maroon);
-}
-
-[data-accent="peach"] .accent {
-  color: var(--catppuccin-color-peach);
-}
-
-[data-accent="yellow"] .accent {
-  color: var(--catppuccin-color-yellow);
-}
-
-[data-accent="green"] .accent {
-  color: var(--catppuccin-color-green);
-}
-
-[data-accent="teal"] .accent {
-  color: var(--catppuccin-color-teal);
-}
-
-[data-accent="sky"] .accent {
-  color: var(--catppuccin-color-sky);
-}
-
-[data-accent="sapphire"] .accent {
-  color: var(--catppuccin-color-sapphire);
-}
-
-[data-accent="blue"] .accent {
-  color: var(--catppuccin-color-blue);
-}
-
-[data-accent="lavender"] .accent {
-  color: var(--catppuccin-color-lavender);
+/* Ring in the accent — Tailwind's ring-* palette has no slot for it. */
+.ring-accent {
+  --tw-ring-color: var(--accent);
 }
 
 /* Selection styles */
@@ -466,4 +477,14 @@ body {
   50% {
     opacity: 0;
   }
+}
+
+/*
+ * The scrim under the column is dense enough to carry the copy on its own, so
+ * glyphs stay crisp with no shadow smearing their edges. The one exception is
+ * the fade band on the right, where anything that reaches into it still needs
+ * a little help.
+ */
+.page-copy .over-painting {
+  text-shadow: 0 1px 3px color-mix(in oklab, var(--catppuccin-color-crust) 70%, transparent);
 }
